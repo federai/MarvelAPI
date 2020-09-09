@@ -1,0 +1,51 @@
+.heros{  
+    margin-bottom: 3%;
+}
+.img-thumbnail {
+    width: 95%;
+    height: 95%;
+    
+}
+.title{
+    font-size: 15px;
+    text-align: center;
+}
+.marg {
+    margin: 5% 0%;
+}
+.card {
+    float: left;
+    width: 33.3333333333%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card .image {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .card:nth-child(3n+1) {
+      clear: left;
+  }
+  
+  .card img {
+    width: 100%;
+  }
+  
+  .card h2,
+  .card p {
+    color: black;
+  }
+  
+  .card p {
+    font-size: 12px;
+  }
+  
+  .card a {
+    color: black;
+  }
+  
