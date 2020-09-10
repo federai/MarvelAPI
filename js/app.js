@@ -15,14 +15,18 @@ function heroes(datos) {
     for ( const hero of datos){
         //console.log(valor.name)
        contenido.innerHTML+=`
-                <div class="col-4 heros">
-                <a href="${hero.urls[0].url}" target="_blank">
+                <div class="col-6 col-md-4">
+                <div><a href="${hero.urls[0].url}" target="_blank">
                 <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}" alt="${hero.name}" class="img-thumbnail rounded mx-auto d-block">
-                </a>
-                <h4 class="title">${hero.name}</h3>
+                </a></div>
+                <div><h4 class="title">${hero.name}</h3></div>
+               
             </div>`;
     }
 }
+
+
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -53,10 +57,10 @@ function getSuperhero(e) {
   
             for (let i = 0; i < response.data.results.length; i++) {
               
-                output += '<div class="card">';
-                output += '<div class="image" style="background-image: url(' + response.data.results[i].thumbnail.path + '.' + response.data.results[i].thumbnail.extension + ');"></div>';
-                output += '<h2><a target="_blank" href="' + response.data.results[i].urls[0].url + '">' + response.data.results[i].name + ' </a></h2>';
-                output += '<p>' + response.data.results[i].description + '</p>';
+                output += '<div class="col-6 col-md-4 heros card ">';
+                output += '<div  ><img src=' + response.data.results[i].thumbnail.path + '.' + response.data.results[i].thumbnail.extension + ' alt="" class="img-thumbnail rounded mx-auto d-block"></div>'
+                output += '<div><h3><a target="_blank" href="' + response.data.results[i].urls[0].url + '">' + response.data.results[i].name + ' </a></h3></div>';
+                output += '<div><p>' + response.data.results[i].description + '</p></div>';
                 output += '</div>';
             }
             document.getElementById('marvelhero').innerHTML = output;

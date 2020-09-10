@@ -1,5 +1,7 @@
+
 .heros{  
     margin-bottom: 3%;
+   
 }
 .img-thumbnail {
     width: 95%;
@@ -14,15 +16,16 @@
     margin: 5% 0%;
 }
 .card {
-    float: left;
-    width: 33.3333333333%;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 1%;
     text-align: center;
   }
   
-  .card .image {
-    width: 200px;
-    height: 200px;
+  .card .img {
+    width: 50%;
+    height: 50%;
     background-size: cover;
     border-radius: 50%;
     margin: 0 auto;
@@ -32,9 +35,7 @@
       clear: left;
   }
   
-  .card img {
-    width: 100%;
-  }
+  
   
   .card h2,
   .card p {
@@ -48,4 +49,19 @@
   .card a {
     color: black;
   }
-  
+ /*
+  @media screen and (max-width:768px){
+    
+    #marvelhero{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .heros{
+      width: 100%;
+      position: unset;
+      padding:unset;
+      max-width: unset;
+      flex: unset;
+    }
+
+  }*/
