@@ -1,4 +1,9 @@
-
+body{
+  background-color: red;
+}
+.container-fluid{
+  margin-top: 2%;
+}
 .heros{  
     margin-bottom: 3%;
    
@@ -9,8 +14,12 @@
     
 }
 .title{
-    font-size: 15px;
+    
     text-align: center;
+    font-family: 'Marvel', sans-serif;
+    color: white;
+    font-style: italic;
+    text-shadow: gray 1px 1px 1px;
 }
 .marg {
     margin: 5% 0%;
@@ -18,7 +27,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    
+    background-color: red;
     padding: 1%;
     text-align: center;
   }
@@ -26,7 +35,7 @@
   .card .img {
     width: 50%;
     height: 50%;
-    background-size: cover;
+    background-color: red;
     border-radius: 50%;
     margin: 0 auto;
   }
@@ -49,19 +58,3 @@
   .card a {
     color: black;
   }
- /*
-  @media screen and (max-width:768px){
-    
-    #marvelhero{
-      display: grid;
-      grid-template-columns: 50% 50%;
-    }
-    .heros{
-      width: 100%;
-      position: unset;
-      padding:unset;
-      max-width: unset;
-      flex: unset;
-    }
-
-  }*/
