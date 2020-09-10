@@ -1,4 +1,4 @@
-const url='https://gateway.marvel.com:443/v1/public/characters?&offset=20&limit=100&ts=1&apikey=7d3efefb40aafffc7ddbec0348905a27&hash=56d298663a24b3e08f10bbb54d2b2b7e';
+const url='https://gateway.marvel.com:443/v1/public/characters?&limit=100&ts=1&apikey=7d3efefb40aafffc7ddbec0348905a27&hash=56d298663a24b3e08f10bbb54d2b2b7e';
 var contenido = document.querySelector('#marvelhero')
 const search = document.querySelector('search')
 function draw(){
