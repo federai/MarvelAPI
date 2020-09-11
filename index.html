@@ -17,22 +17,42 @@
   <!--------------------------------------------HEADER------------------------------------------------------>
 
   <header>
+
+    
     <img src="images/marvel.svg" class="logo" />
+    
     <form id="searchForm" onsubmit="getSuperhero(event)">
-      <input type="text" class="search-box" id="superhero" value="spider" placeholder="Search superhero">
-      <button class="button" type="submit">Get superhero</button>
+      <input type="text" class="search-box" id="superhero"  placeholder="Iron man">
+      <button class="button" type="submit">Busca tu Heroe!</button>
+      <button class="button" type="submit" onclick="back(1)">Volver</button>   
     </form>
+  
+    
+    
   </header>
 
 <!---------------------------------------------------HEROES!-------------------------------------------------->
 
-
+ 
 
   <div class="container-fluid">
     <div class="row" id="marvelhero">
         
     </div>
   </div>
+  
+  <div id="nav">
+  <nav aria-label="Page navigation example" >
+        
+    <ul class="pagination justify-content-center" >
+          <button class="button" type="submit" onclick="draw(2)">20</button>   
+          <button class="button" type="submit" onclick="draw(4)">40</button>   
+          <button class="button" type="submit" onclick="draw(6)">60</button>   
+          <button class="button" type="submit" onclick="draw(8)">80</button>   
+          <button class="button" type="submit" onclick="draw(10)">100</button>   
+        </ul>
+      </nav>
+    </div>
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
